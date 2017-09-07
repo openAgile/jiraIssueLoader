@@ -5,6 +5,9 @@ shortid.characters('0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX
 
 const baseUrl = '';
 
+const project1 = '';
+const project2 = '';
+
 let axios_instance = axios.create({
   baseURL: baseUrl,
   timeout: 5000,
@@ -68,12 +71,12 @@ postToJiraWithDelay({
   totalThingsToCreate: 1000,
   batchSize: 25,
   endPoint: restIssueEndPoint,
-  payload: function() { return payload('Nerds', 'OM') }
+  payload: function() { return payload('Nerds', project1) }
 }).then(function() {
   postToJiraWithDelay({
     totalThingsToCreate: 1000,
     batchSize: 25,
     endPoint: restIssueEndPoint,
-    payload: function() { return payload('Nerds', 'HH') }
+    payload: function() { return payload('Nerds', project2) }
   });
 });
