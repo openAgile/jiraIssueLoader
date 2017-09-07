@@ -1,0 +1,17 @@
+{
+  "name": "create-jira-issues",
+  "version": "1.0.0",
+  "description": "Create a bunch of issues in JIRA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Cory Wheeler",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "btoa": "^1.1.2",
+    "shortid": "^2.2.8"
+  }
+}
