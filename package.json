@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "btoa": "^1.1.2",
+    "fluent-promises": "0.0.4",
     "shortid": "^2.2.8"
   }
 }
